@@ -1,19 +1,8 @@
 @import './base/settings';
 @import './base/base';
 
-
-nav{
-    position: absolute !important;
-    width: 100%;
-    top: 10%;
-    font-size: $m-size;
-
-    .navbar-brand{
-        font-size: $l-size;
-        font-family: 'jura';
-        font-weight: lighter;
-    }
-}
+@import './header';
+@import './about';
 
 
 
@@ -23,3 +12,12 @@ nav{
     background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100vh;
 }
+
+
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: right;
+}   
