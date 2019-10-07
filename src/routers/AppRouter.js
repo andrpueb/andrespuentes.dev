@@ -3,20 +3,27 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 //import NotFoundPage from './../components/NotFoundPage';
 import Header from './../components/Header';
-import Home from './../components/Home';
+import About from './../components/About';
 import Projects from './../components/Projects';
-
+import Menu from './../components/Menu';
+import Skills from './../components/Skills';
+import MainContent from '../components/MainContent';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const AppRouter = () => (
     <BrowserRouter>
-        <div>
+        <div className="main_container">
             <Header />
+            <Menu />
             <Switch>
-                <Route path="/" component={Home} exact />
-                <Route path="/projects" component={Projects} exact />
+                <Route path="/about" component={About} exact />
+                <Route path="/projects-and-work" component={Projects} />
+                <Route path="/skills-and-tools" component={Skills} />
+                <Route path="/contact-me" component={Contact} />
             </Switch>
+            <Footer />
         </div>
-
     </BrowserRouter>
 );
 

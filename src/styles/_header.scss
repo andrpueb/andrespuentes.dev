@@ -1,16 +1,10 @@
-
 .header{
-    font-size: $l-size;
-    font-family: 'jura';
-    font-weight: lighter;
- }
-
-.pageName{
-    text-align: center;
-    margin: auto;
-}
-
-nav{
-    font-size: $m-size;
-    position: absolute;
+    align-items: center;
+    display: flex;
+    font-family: $fontRad;
+    height: 100px;
+    justify-content: center;
+    position: sticky;
+    background-color: #BF5454;
+    background: linear-gradient(to bottom, #283048, #859398); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

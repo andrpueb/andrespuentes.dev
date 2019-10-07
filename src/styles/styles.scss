@@ -3,6 +3,10 @@
 
 @import './header';
 @import './about';
+@import './skills';
+@import './menu';
+@import './mainContent';
+@import './footer';
 
 
 
@@ -13,11 +17,12 @@
     height: 100vh;
 }
 
+body{
+    max-height: 100vh;
+}
+
+.header{
+    text-align: center;
+}
 
 
-footer{
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    text-align: right;
-}   

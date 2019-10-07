@@ -1,6 +1,8 @@
 .about{
-    width: 80%;
-    margin: auto;
-    margin-top: 20vh;
     font-size: $m-size;
+    padding-left: 10%;
+    padding-top: 15%;
+    .jumbotron{
+        box-shadow: 4px 4px 2px -4px rgba(50,62,64,1);
+    }
 }

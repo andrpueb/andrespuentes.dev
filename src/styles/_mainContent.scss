@@ -1,0 +1,9 @@
+.content{    
+    display: flex;
+    justify-content: center;
+    margin-left: 180px;
+    box-shadow: -4px 42px 40px -20px rgba(110,110,110,1);
+    width: calc(100% - 180px);
+    height: 75vh;
+    min-height: 100px;
+}
