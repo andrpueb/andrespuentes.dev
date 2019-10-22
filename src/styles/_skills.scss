@@ -1,0 +1,11 @@
+.skills{
+    width: 70%;
+    height: 600px;
+    margin-top: 20px;
+    transition: box-shadow 1s ease, transform 1s ease;
+}
+
+.skills.activated{
+    box-shadow: -63px 60px 33px -41px rgba(110,110,110,1);
+    transform: translateX(5px);
+}

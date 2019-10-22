@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
 
-
 class Menu extends React.Component {
     constructor(props) {
         super(props);
@@ -15,13 +14,15 @@ class Menu extends React.Component {
         console.log(this.state.selection)
         // e.target.setAttribute('class', 'redBorder');
     }
+
     render() {
         return (
             <div className="menu" >
                 <div className="menu-inner">
                     <NavLink
                         to="/about"
-                        activeClassName="is-active">
+                        activeClassName="is-active"
+                    >
                         Andres
                     </NavLink>
                     <NavLink
@@ -44,7 +45,7 @@ class Menu extends React.Component {
                 </div>
             </div>
         )
-    };
+    }
 }
 
 export default Menu;

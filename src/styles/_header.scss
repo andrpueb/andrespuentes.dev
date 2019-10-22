@@ -1,10 +1,27 @@
-.header{
+.header {
     align-items: center;
     display: flex;
     font-family: $fontRad;
     height: 100px;
     justify-content: center;
     position: sticky;
-    background-color: #BF5454;
-    background: linear-gradient(to bottom, #283048, #859398); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-left: 250px;
+
+    .pageTitle {
+        padding: 10px 20px;
+        z-index: 1;
+    }
+
+    h1 {
+        font-weight: 600;
+        background: #232526;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #414345, #232526);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #414345, #232526);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
 }

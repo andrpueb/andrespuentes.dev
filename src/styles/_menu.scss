@@ -1,46 +1,60 @@
-.menu{
-    display: flex;
-    font-size: $m-size;
-    align-items: center;
-    width: 180px;
-    top: 0px;
-    height: 100%;
-    position: fixed;
-    font-family: $fontJura;
-    
-    .menu-inner{
-        width: 100%;
-        display:flex;
-        justify-content: flex-end;
-        flex-direction: column;
+@include for-tablet-portrait-up {
+    .menu {
+        display: flex;
+        font-size: $m-size;
+        align-items: flex-start;
+        width: 250px;
+        top: 0px;
+        height: 100%;
+        position: fixed;
+        font-family: $fontSource;
+        font-weight: 300;
+        background: #0F2027;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+        padding-top: 150px;
+
+        .menu-inner {
+            width: 80%;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+        }
+
+        a {
+            color: #F2F2F2;
+            text-align: center;
+            list-style: none;
+            margin-bottom: 20px;
+            height: 30px;
+            z-index: 1;
+            transition: transform 1s ease, background-color 1s ease, box-shadow 1s ease;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #F24405;
+        }
+
+        a:after {
+            content: "";
+            display: block;
+            width: 0%;
+            border-bottom: 1px solid #F24405;
+            transition: width 1s ease;
+        }
     }
-    a{
-        color: #BF5454;
-        text-align: center;
-        list-style: none;
-        margin-bottom: 20px;
-        height: 30px;
-        width: 150px;
-        z-index: 1;
-        transition: transform 1s ease, background-color 1s ease, box-shadow 1s ease;
-    }
-    a:hover{
-        text-decoration: none;
-        color: #BF5454;
-    }
-    a:after {
-        content: ""; /* This is necessary for the pseudo element to work. */ 
-        display: block; /* This will put the pseudo element on its own line. */
-        width: 0%; /* Change this to whatever width you want to have before hover. */
-        border-bottom: 1px solid #323E40; /* This creates the border. Replace black with whatever color you want. */
-        transition: width 1s ease; /* This establishes the amount of time in seconds the animation should take from start to finish */
-    }
+
 }
-.is-active{
+
+.is-active {
     left: 0px;
     transform: translateX(30px);
 }
 
 .is-active:after {
-    width: 100% !important; /* This will be the new width of your border when on hover */
+    width: 100% !important;
+    /* This will be the new width of your border when on hover */
 }

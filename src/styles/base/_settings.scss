@@ -8,5 +8,45 @@ $xl-size: 4.8rem;
 $desktop-breakpoint: 45rem;
 
 
-$fontJura: 'Jura', serif;
-$fontRad: 'Rajdhani', sans-serif;
+$fontJura: 'Jura',
+serif;
+$fontRad: 'Rajdhani',
+sans-serif;
+$fontBree : 'Bree Serif',
+serif;
+$fontGothic : 'Didact Gothic',
+sans-serif;
+$fontSource :'Source Code Pro',
+monospace;
+
+
+
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}

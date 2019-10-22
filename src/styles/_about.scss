@@ -1,8 +1,40 @@
-.about{
+.about {
+    border-radius: 5px;
     font-size: $m-size;
-    padding-left: 10%;
-    padding-top: 15%;
-    .jumbotron{
-        box-shadow: 4px 4px 2px -4px rgba(50,62,64,1);
+    padding: 20px;
+
+    .content_title {
+        width: fit-content;
     }
+
+    .content_title h1 {
+        position: relative;
+        color: #fff;
+        padding-right: 20px;
+        color: darkslategrey;
+    }
+
+    .content_text {
+        background-color: #f0f0f0;
+        background-image: url ("https://www.transparenttextures.com/patterns/ag-square.png");
+        margin: auto;
+        padding: 5vw;
+        -webkit-box-shadow: 44px 41px 13px -39px rgba(102, 102, 102, 1);
+        -moz-box-shadow: 44px 41px 13px -39px rgba(102, 102, 102, 1);
+        box-shadow: 44px 41px 13px -39px rgba(102, 102, 102, 1);
+    }
+
+    .content_image {
+        position: relative;
+        left: 70%;
+        bottom: 20px;
+        width: 200px;
+        height: 200px;
+        background: #BF7C63;
+        -webkit-box-shadow: 6px -6px 8px -1px rgba(102, 102, 102, 1);
+        -moz-box-shadow: 6px -6px 8px -1px rgba(102, 102, 102, 1);
+        box-shadow: 6px -6px 8px -1px rgba(102, 102, 102, 1);
+    }
+
+
 }

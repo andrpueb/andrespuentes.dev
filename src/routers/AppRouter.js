@@ -3,11 +3,11 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 //import NotFoundPage from './../components/NotFoundPage';
 import Header from './../components/Header';
+import MainContent from '../components/MainContent';
 import About from './../components/About';
 import Projects from './../components/Projects';
 import Menu from './../components/Menu';
 import Skills from './../components/Skills';
-import MainContent from '../components/MainContent';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
